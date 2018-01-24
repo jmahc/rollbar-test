@@ -1,27 +1,24 @@
 {
-  "name": "testnoderollbar",
+  "name": "rollbar-test",
   "version": "0.1.0",
   "description": "A test app for using rollbar with express",
   "main": "server.js",
-  "keywords": [
-    "express",
-    "webpack",
-    "node",
-    "rollbar"
-  ],
-  "author": "Rollbar",
+  "keywords": ["express", "webpack", "node", "rollbar"],
+  "author": "Jordan McArdle",
   "license": "MIT",
   "scripts": {
+    "clean": "rm -rf node_modules dist yarn.lock",
     "test": "",
     "start": "node dist/server",
-    "build": "NODE_ENV=production webpack --config ./webpack.config.js --progress --profile --colors"
+    "build":
+      "NODE_ENV=production webpack --config ./webpack.config.js --progress --profile --colors"
   },
   "dependencies": {
     "babel-cli": "^6.4.0",
     "babel-core": "^6.22.1",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
-    "rollbar": "file:../../",
+    "rollbar": "^2.3.7",
     "webpack-node-externals": "^1.5.4"
   },
   "devDependencies": {
